@@ -50,7 +50,7 @@ autocmd BufNewFile,BufRead *.m map <buffer> <C-b> :w <CR> :execute ":!octave --n
 
 "go specific
 autocmd BufNewFile,BufRead *.go map <buffer> <C-b> :w <CR> :execute ":GoBuild" <CR>
-autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4
+"autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4
 let g:go_highlight_types = 1
 let g:go_highlight_fields = 1
 let g:go_highlight_functions = 1
