@@ -88,3 +88,8 @@ source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # fast directory cache navigation
 . `brew --prefix`/etc/profile.d/z.sh
+
+# ENV variables
+export GOPATH=$HOME/Code/go
+PATH=$PATH:$GOPATH/bin
+
