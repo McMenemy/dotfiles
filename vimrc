@@ -21,6 +21,7 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 set number
+set autowrite "all some : commands to save file before running
 set autoindent
 set tabstop=4
 set softtabstop=4
@@ -36,13 +37,14 @@ colorscheme solarized
 
 "NERDTree settings
 :command! NT NERDTreeToggle
+let NERDTreeShowHidden=1
 
 "linter settings
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 1
-let g:syntastic_javascript_checkers=['jscs']
+"let g:syntastic_javascript_checkers=['jscs']
 
 "javascript specific
 autocmd Filetype javascript setlocal shiftwidth=2 softtabstop=2 expandtab
@@ -52,7 +54,9 @@ autocmd BufNewFile,BufRead *.m map <buffer> <C-n> :w <CR> :execute ":!octave --n
 autocmd BufNewFile,BufRead *.m map <buffer> <C-b> :w <CR> :execute ":!octave --no-gui %" <CR>
 
 "go specific
-autocmd BufNewFile,BufRead *.go map <buffer> <C-b> :w <CR> :execute ":GoBuild" <CR>
+"autocmd BufNewFile,BufRead *.go map <buffer> <C-b> :GoBuild <CR>
+"autocmd BufNewFile,BufRead *.go map <buffer> <C-r> :GoRun <CR>
+"autocmd BufNewFile,BufRead *.go map <buffer> <C-t> :GoTest <CR>
 let g:go_highlight_types = 1
 let g:go_highlight_fields = 1
 let g:go_highlight_functions = 1
