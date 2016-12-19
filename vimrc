@@ -47,6 +47,9 @@ let g:syntastic_check_on_wq = 1
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 let g:syntastic_javascript_checkers = ['eslint']
 
+"ctrlp settings
+let g:ctrlp_custom_ignore = 'node_modules'
+
 "javascript specific
 autocmd Filetype javascript setlocal shiftwidth=2 softtabstop=2 expandtab
 
