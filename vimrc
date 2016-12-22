@@ -23,11 +23,11 @@ filetype plugin indent on    " required
 set number
 set autowrite "all some : commands to save file before running
 set autoindent
-set tabstop=4
-set softtabstop=4
+set tabstop=2
+set softtabstop=2
 set colorcolumn=100
 set noexpandtab
-set shiftwidth=4
+set shiftwidth=2
 set backspace=indent,eol,start
 set noswapfile
 set nowrap
