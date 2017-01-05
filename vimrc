@@ -59,6 +59,7 @@ autocmd BufNewFile,BufRead *.py setlocal shiftwidth=4 tabstop=4 noexpandtab
 "octave specific
 autocmd BufNewFile,BufRead *.m map <buffer> <C-n> :w <CR> :execute ":!octave --no-gui --eval \"submit(); pause\"" <CR> 
 autocmd BufNewFile,BufRead *.m map <buffer> <C-b> :w <CR> :execute ":!octave --no-gui %" <CR>
+autocmd BufNewFile,BufRead *.ino,*.ide,*.pde set filetype=c++
 
 "go specific
 "autocmd BufNewFile,BufRead *.go map <buffer> <C-b> :GoBuild <CR>
