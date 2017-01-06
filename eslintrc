@@ -1,6 +1,11 @@
 {
 	"extends": "airbnb",
 	"rules": {
-	    "max-len": [1, 120, 2, {ignoreComments: true}],
+	  "max-len": [1, 120, 2, {ignoreComments: true}],
+		"react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+		"no-param-reassign": ["error", { "props": false }]
+	},
+	"globals": {
+		"window": true
 	}
 }
