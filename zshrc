@@ -87,9 +87,15 @@ source $ZSH/oh-my-zsh.sh
 source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # fast directory cache navigation
-. `brew --prefix`/etc/profile.d/z.sh
+#. `brew --prefix`/etc/profile.d/z.sh
 
 # ENV variables
 export GOPATH=$HOME/Code/go
 PATH=$PATH:$GOPATH/bin
+PATH=$PATH:/usr/local/sbin
+PATH="/Users/josh.mcmenemy/anaconda/bin:$PATH"
 
+# Design Tool variables
+export DT_HOME="/Users/josh.mcmenemy/Code/design_tool"
+export DT_DATA="/Users/josh.mcmenemy/lib/design_tool/data"
+export DT_OFFTARGET="/Users/josh.mcmenemy/Code/design_tool/design_local/genomes"

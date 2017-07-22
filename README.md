@@ -6,6 +6,10 @@ vim:
 
 ln -s ~/Code/dotfiles/vimrc ~/.vimrc
 
-zsh
+zsh:
 
 ln -s ~/Code/dotfiles/zshrc ~/.zshrc
+
+ideavim:
+
+ln -s ~/Code/dotfiles/ideavimrc ~/.ideavimrc

@@ -53,8 +53,11 @@ let g:ctrlp_custom_ignore = 'node_modules'
 "javascript specific
 autocmd Filetype javascript setlocal shiftwidth=2 softtabstop=2 expandtab
 
+"html specific
+autocmd BufNewFile,BufRead *.html setlocal shiftwidth=2 softtabstop=2 expandtab
+
 "python specific
-autocmd BufNewFile,BufRead *.py setlocal shiftwidth=4 tabstop=4 noexpandtab
+autocmd BufNewFile,BufRead *.py setlocal shiftwidth=4 tabstop=4 expandtab
 
 "octave specific
 autocmd BufNewFile,BufRead *.m map <buffer> <C-n> :w <CR> :execute ":!octave --no-gui --eval \"submit(); pause\"" <CR> 
@@ -73,4 +76,3 @@ let g:go_highlight_operators = 1
 
 "vimrc specific
 "autocmd BufNewFile,BufRead *.vimrc map <buffer> <C-b> :w <CR> :source % <CR> :PluginInstall <CR> 
-
